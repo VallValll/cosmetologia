@@ -13,18 +13,26 @@
         rel="stylesheet">
     <!-- style -->
     <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/hamburgers.min.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
 </head>
 
 <body>
     <header class="border-bottom">
         <div class="container">
             <div class="header__container">
+                <button class="hamburger hamburger-toggle hamburger--squeeze"
+                    onclick="this.classList.toggle('is-active')" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
                 <div class="header__row">
                     <img src="./images/logo.svg" width="67" height="94" alt="logo" class="page-header__logo">
 
-                    <nav>
-                        <ul class="header__menu">
+                    <nav class="header__menu">
+                        <ul class="header__menu-item">
                             <li><a href="!#">О нас</a></li>
                             <li><a href="!#">Услуги</a></li>
                             <li><a href="!#">Контакты</a></li>
@@ -34,7 +42,7 @@
 
                 <div class="header__link">
                     <a href="tel:+74952884424" class="header__tell">+7(977)000-00-00</a>
-                    <img src="./images/tell.svg" alt="telephone">
+                    <img src="./images/tell.svg" alt="telephone" class="header__link-img">
                 </div>
             </div>
         </div>
@@ -50,7 +58,7 @@
                         <a href="" class="btn">Записаться</a>
                     </div>
                     <div>
-                        <img src="./images/1.jpg" alt="photo-1" width="557" height="506" class="section__img">
+                        <img src="./images/1.jpg" alt="photo-1" class="section__img item__img">
                     </div>
                 </div>
             </div>
@@ -59,7 +67,7 @@
         <section class="background">
             <div class="container ">
                 <div class="serviсes">
-                    <img src="./images/2.jpg" alt="" width="558" height="506" class="section__img">
+                    <img src="./images/2.jpg" alt="" class="section__img item__img">
                     <div class="serviсes__item">
                         <h2 class="serviсes__title">Идеальная услуга для Вас!</h2>
                         <p class="section__text">Пройдите короткий тест для выбора процедуры, которая подойдет лично
@@ -114,7 +122,7 @@
                         стажем работы. В&nbsp;2008 окончила высшее учебное образовательное учреждение и&nbsp;продолжает
                         совершенствовать навыки на&nbsp;курсах повышения квалификации.</p>
                 </div>
-                <img src="./images/3.jpg" alt="specialist" width="558" height="506">
+                <img src="./images/3.jpg" alt="specialist" class="item__img">
             </div>
         </section>
         <!-- licenses -->
@@ -127,7 +135,7 @@
                     </div>
                     <div class="accordion__wrapper">
                         <div class="accordion__content border-bottom">
-                            <img src="./images/licenses.jpg" alt="" width="920" height="583">
+                            <img src="./images/licenses.jpg" alt="" class="accordion__img">
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,92 @@
+@media screen and (width < 1024px) {
+    .clinic {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .clinic__item {
+        display: grid;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .btn {
+        margin-bottom: 36px;
+    }
+
+    .serviсes {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 0;
+    }
+
+    .serviсes__item {
+        display: grid;
+        justify-items: center;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .specialist {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .specialist__item {
+        text-align: center;
+    }
+
+    .header__tell {
+        display: none;
+    }
+}
+
+@media screen and (width < 768px) {
+    .header__menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: calc(var(--header-height) + 1px);
+        background-color: var(--color-brand-btn);
+        margin: 0px;
+        padding: 30px 0 30px 50px;
+    }
+
+    .header__menu-item {
+        flex-direction: column;
+    }
+
+    
+    .header__menu a {
+        color: #FFF;
+        font-size: 24px;
+    }
+    
+    .header__container {
+        padding: 0;
+    }
+    
+    .hamburger-toggle {
+        display: block;
+    }
+
+    .hamburger-toggle.is-active~.header__menu {
+        display: block;
+    }
+
+    .page-header__logo {
+        min-width: 70px;
+    }
+
+    .header__link {
+        min-width: 70px;
+    }
+
+    .header__link-img {
+        min-width: 20px;
+    }
+
+
+}
