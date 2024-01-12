@@ -1,3 +1,8 @@
+@media screen and (width > 1024px) {
+    
+    
+}
+
 @media screen and (width < 1024px) {
     .clinic {
         grid-template-columns: 1fr;
@@ -39,6 +44,16 @@
     .header__tell {
         display: none;
     }
+
+    .services-offer{
+        display: flex;
+        gap: 0;
+    }
+
+    .swiper {
+       max-width: 558px;
+       max-height: 506px;
+      }
 }
 
 @media screen and (width < 768px) {
@@ -72,7 +87,7 @@
         display: block;
     }
 
-    .hamburger-toggle.is-active~.header__menu {
+    .hamburger-toggle.is-active~ .header__row .header__menu {
         display: block;
     }
 

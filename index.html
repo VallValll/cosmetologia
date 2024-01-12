@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@400;600;700&display=swap"
         rel="stylesheet">
     <!-- style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/hamburgers.min.css">
     <link rel="stylesheet" href="./styles/style.css">
@@ -81,34 +82,38 @@
                             class="color-brand">30%.</span>
                     <p>
                 </div>
-                <div class="services-offer">
-                    <div class="services-offer__item">
-                        <h2 class="services-offer__title">Выход<br>в свет</h2>
-                        <div class="services-offer__text">
-                            <p>Разглаживание морщин</p>
-                            <p>Глубокое очищение кожи</p>
-                            <p>Увлажнение кожи</p>
+                <div class="swiper">
+                    <div class="services-offer swiper-wrapper">
+                        <div class="services-offer__item swiper-slide">
+                            <h2 class="services-offer__title">Выход<br>в свет</h2>
+                            <div class="services-offer__text">
+                                <p>Разглаживание морщин</p>
+                                <p>Глубокое очищение кожи</p>
+                                <p>Увлажнение кожи</p>
+                            </div>
+                            <a href="" class="btn">Записаться</a>
                         </div>
-                        <a href="" class="btn">Записаться</a>
-                    </div>
-                    <div class="services-offer__item">
-                        <h2 class="services-offer__title">Безупречный макияж</h2>
-                        <div class="services-offer__text">
-                            <p>Массаж лица</p>
-                            <p>Омоложение пептидами</p>
-                            <p>Создание идеального тона</p>
+                         <div class="services-offer__item swiper-slide">
+                            <h2 class="services-offer__title">Безупречный макияж</h2>
+                            <div class="services-offer__text">
+                                <p>Массаж лица</p>
+                                <p>Омоложение пептидами</p>
+                                <p>Создание идеального тона</p>
+                            </div>
+                            <a href="" class="btn">Записаться</a>
                         </div>
-                        <a href="" class="btn">Записаться</a>
-                    </div>
-                    <div class="services-offer__item">
-                        <h2 class="services-offer__title">Золотое<br>сияние</h2>
-                        <div class="services-offer__text">
-                            <p>Тонизация кожи</p>
-                            <p>“Золотая церемония”</p>
-                            <p>Точечный массаж</p>
+                        <div class="services-offer__item swiper-slide">
+                            <h2 class="services-offer__title">Золотое<br>сияние</h2>
+                            <div class="services-offer__text">
+                                <p>Тонизация кожи</p>
+                                <p>“Золотая церемония”</p>
+                                <p>Точечный массаж</p>
+                            </div>
+                            <a href="" class="btn">Записаться</a>
                         </div>
-                        <a href="" class="btn">Записаться</a>
                     </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
                 <div class="serviсes__doptext padding-left">*Акция дейтсвует за 2 дня до Дня Рождения</div>
             </div>
@@ -157,6 +162,8 @@
             </div>
         </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
