@@ -116,7 +116,6 @@ h1 {
 }
 
 .item__img {
-    width: 558px;
     height: 506px;
     max-width: 100%;
     object-fit: cover;
