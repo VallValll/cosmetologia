@@ -6,6 +6,7 @@
     --color-black: #31332C;
     --color-background: #E4F4FF;
     --color-border: #ABCEE6;
+    --color-input: #63BD5B;
 
     /* font */
     --font-family: 'Montserrat', sans-serif;
@@ -155,8 +156,13 @@ h1 {
     color: #FFF;
 }
 
-.btn--black:hover {
-    background-color: var(--color-brand-btn-hover);
+.btn--input {
+    border-color: var(--color-input);
+}
+
+.btn--input:hover {
+    background-color: var(--color-input);
+    color: #FFF;
 }
 
 /* serviсes */
@@ -305,3 +311,131 @@ h1 {
 .footer__item-1 {
     padding-bottom: 20px;
 }
+
+/* popup */
+
+.popup__title {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: var(--color-background);
+    padding: 28px 60px;
+}
+
+.popup__title-text {
+    color: var(--color-brand);
+    font-weight: 500;
+}
+
+.popup__text {
+    padding: 40px 57px 60px 57px;
+    position: relative;
+}
+
+
+/* test */
+
+input {
+    display: none;
+}
+
+.test__body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    position: relative;
+}
+
+.test__body-text {
+    font-size: 20px;
+    padding: 26px 0;
+}
+
+.text--brend {
+    color: var(--color-brand);
+    font-weight: 500;
+    text-decoration-line: underline
+}
+
+.test__input {
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.test__radio {
+    display: inline-block;
+    border: 1px solid var(--color-black);
+    width: 16px;
+    height: 16px;
+    position: relative;
+    vertical-align: middle;
+    box-sizing: border-box;
+    border-radius: 300px;
+    background-color:#ffffff;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test__radio:before {
+    content: '';
+    background: var(--color-input);
+    width: 8px;
+    height: 8px;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 300px;
+}
+
+input:checked + .test__radio:before {
+    opacity: 1;
+}
+input:checked + .test__radio {
+    border-color: var(--color-input);
+}
+
+.test__text {
+    font-size: 20px;
+    padding-left: 12px;
+}
+
+.test__img {
+    position: absolute;
+    right: 100px;
+    bottom: 60px;
+}
+
+.popup__title-img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.test__checkbox {
+    display: inline-block;
+    border: 1px solid var(--color-black);
+    width: 16px;
+    height: 16px;
+    position: relative;
+    vertical-align: middle;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color:#ffffff;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input:checked + .test__checkbox {
+    background-image: url(./check.svg);
+    border: none;
+}
+
+.test__btn {
+    position: absolute;
+    right: 100px;
+}
+
+
