@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/hamburgers.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="border-bottom">
+        <div class="container">
+            <div class="header__container">
+                <button class="hamburger hamburger-toggle hamburger--squeeze"
+                    onclick="this.classList.toggle('is-active')" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <div class="header__row">
+                    <a href="./index.html"><img src="./images/logo.svg" width="67" height="94" alt="logo"
+                            class="page-header__logo"></a>
+
+                    <nav class="header__menu">
+                        <ul class="header__menu-item">
+                            <li><a href="./about-us.html">О нас</a></li>
+                            <li><a href="!#">Услуги</a></li>
+                            <li><a href="!#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="header__link">
+                    <a href="tel:+74952884424" class="header__tell">+7(977)000-00-00</a>
+                    <img src="./images/tell.svg" alt="telephone" class="header__link-img">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- clinic -->
+        <section class="container">
+            <div class="section">
+                <div class="section__item">
+                    <img src="./images/akhobekova-clinic.svg" alt="" width="400" height=86>
+                    <p class="section__text">В&nbsp;нашей клинике&nbsp;Вы сможете найти<br>широкий спектр
+                        косметлогических<br>услуг выского класса.</p>
+                </div>
+                <picture class="section__item-2">
+                    <source srcset="./images/4-mob.jpg" media="(max-width: 375px)">
+                    <img src="./images/4.jpg" alt="photo-4" class="section__img item__img">
+                </picture>
+            </div>
+        </section>
+        <section class="container">
+            <div class="section__grid">
+                <div class="section__grid-1">
+                    <h2 class="section__title">Уютное лобби</h2>
+                    <p class="section__text">Вы&nbsp;можете выпить кофе, пока ожидаете специалиста, а&nbsp;также
+                        попробовать полезные угощения.</p>
+                </div>
+                <picture class="section__grid-2">
+                    <source srcset="./images/5-mob.jpg" media="(max-width: 375px)">
+                    <img src="./images/5.jpg" alt="photo-5" class="section__img item__img">
+                </picture>
+                <picture class="section__grid-3">
+                    <source srcset="./images/6-mob.jpg" media="(max-width: 375px)">
+                    <img src="./images/6.jpg" alt="photo-6" class="section__img item__img-1">
+                </picture>
+                <picture class="section__grid-3">
+                    <img src="./images/7.jpg" alt="photo-7" class="section__img item__img-2">
+                </picture>
+            </div>
+        </section>
+        <section class="container">
+            <div class="section">
+                <div class="section__item">
+                    <h2 class="section__title">Кабинеты процедур</h2>
+                    <p class="section__text">Место, где&nbsp;Вы сможете забыть о&nbsp;заботах и&nbsp;переживаниях
+                        и&nbsp;довериться нашему спциалисту.</p>
+                </div>
+                <div class="section__item-2">
+                    <picture>
+                        <source srcset="./images/8-mob.jpg" media="(max-width: 500px)">
+                        <img src="./images/8.jpg" alt="photo-8" class="section__img item__img-3">
+                    </picture>
+                    <picture>
+                        <source srcset="./images/9-mob.jpg" media="(max-width: 500px)">
+                        <img src="./images/9.jpg" alt="photo-9" class="section__img item__img-3">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="accordion js-accordion">
+                    <div class="accordion__header border-bottom">
+                        <span>Сертификаты</span>
+                        <img src="./images/str-1.svg" alt="" class="accordion__arrow" height="20">
+                    </div>
+                    <div class="accordion__wrapper">
+                        <div class="accordion__content">
+                            <img src="./images/10.jpg" alt="photo-10" class="accordion__img">
+                            <!-- <img src="./images/10.jpg" alt="photo-10" class="accordion__img">
+                            <img src="./images/10.jpg" alt="photo-10" class="accordion__img"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="accordion js-accordion">
+                    <div class="accordion__header border-bottom">
+                        <span>Лицензии</span>
+                        <img src="./images/str-1.svg" alt="" class="accordion__arrow" height="20">
+                    </div>
+                    <div class="accordion__wrapper">
+                        <picture class="accordion__content border-bottom">
+                            <source srcset="./images/licenses-mob.jpg" media="(max-width: 375px)">
+                            <img src="./images/licenses.jpg" alt="" class="accordion__img">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container">
+            <div class="footer">
+                <div class="footer__item">
+                    <p class="footer__item-1">Имеются противопоказания. Проконсультируйтесь с&nbsp;врачом.18+</p>
+                    <p>Пн - Вс, с 11:00 до 22:00</p>
+                </div>
+                <div class="footer__item">
+                    г. Москва, Большая Филевская, д.21 к.2
+                </div>
+                <div class="footer__item">
+                    Информация, представленная на&nbsp;сайте, не&nbsp;является публичной офертой, определяемой
+                    по&nbsp;ст.&nbsp;437&nbsp;ГК РФ
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

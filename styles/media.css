@@ -1,14 +1,39 @@
-@media screen and (width > 1024px) {
-    
-    
-}
-
 @media screen and (width < 1024px) {
+    .for-mobile {
+        display: block !important;
+    }
+
     .clinic {
         grid-template-columns: 1fr;
         justify-items: center;
     }
 
+    .section {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .section__grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .section__grid-1 {
+        grid-column: span 2;
+        grid-row: auto;
+    }
+
+    .section__grid-2, .section__grid-3, .item__img-2 {
+        grid-column: auto;
+    }
+
+    .section__flex {
+        display: flex;
+        gap: 20px;
+    }
+    
     .clinic__item {
         display: grid;
         justify-items: center;
@@ -44,16 +69,27 @@
     .header__tell {
         display: none;
     }
-
+/* 
     .services-offer{
         display: flex;
         gap: 0;
-    }
+    } */
 
     .swiper {
        max-width: 558px;
-       max-height: 506px;
-      }
+       overflow: auto;
+    }
+    
+    .swiper-button-next {
+        top: auto;
+        bottom: -60px;
+        overflow: hidden;
+    }
+    
+    .swiper-button-prev {
+        top: auto;
+        bottom: -60px;
+    }
 }
 
 @media screen and (width < 768px) {
@@ -103,5 +139,52 @@
         min-width: 20px;
     }
 
+    .footer {
+        grid-template-columns: 1fr;
+    }
 
+    .section__title {
+        font-size: 32px;
+        padding: 20px 0 56px;
+    }
+
+    .section__text {
+        font-size: 20px;
+    }
+
+    .specialist__title {
+        font-size: 32px;
+        padding: 20px 0 56px;
+    }
+
+    .specialist__text {
+        font-size: 20px;
+    }
+
+    .accordion__header {
+        font-size: 32px;
+    }
+}
+
+@media screen and (width < 500px) {
+    .item__img-3 {
+        max-width: 100%;
+        height: 124px;
+    } 
+}
+
+@media screen and (width < 375px) {
+    .item__img--none {
+        display: none;
+    }
+
+    .item__img {
+        max-width: 100%;
+        object-fit: cover;
+        height: auto;
+    }
+    
+    .item__img-2 {
+        display: none;
+    }
 }
