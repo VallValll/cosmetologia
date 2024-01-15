@@ -88,6 +88,10 @@ img {
     border-bottom: 1px solid var(--color-border);
 }
 
+.border-top {
+    border-top: 1px solid var(--color-border);
+}
+
 .header__container {
     display: flex;
     align-items: center;
@@ -486,6 +490,11 @@ img {
     text-decoration-line: underline
 }
 
+.text--brend-noneunnderline {
+    color: var(--color-brand);
+    font-weight: 500;
+}
+
 .test__text {
     font-size: 20px;
     padding-left: 12px;
@@ -596,6 +605,28 @@ img {
     align-items: end;
     gap: 10px;
 }
+
+/* contacts */
+
+.contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 96px 0;
+}
+
+.contact__item {
+    padding-bottom: 56px;
+}
+
+.contacts__text {
+    padding-top: 20px;
+}
+
+.contact__map {
+    display: flex;
+    align-items: center;
+}
+
 
 
 
