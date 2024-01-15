@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <!-- header -->
     <header class="border-bottom">
         <div class="container">
             <div class="header__container">
@@ -34,7 +35,7 @@
 
                     <nav class="header__menu">
                         <ul class="header__menu-item">
-                            <li><a href="!#">О нас</a></li>
+                            <li><a href="./about-us.html">О нас</a></li>
                             <li><a href="!#">Услуги</a></li>
                             <li><a href="!#">Контакты</a></li>
                         </ul>
@@ -54,30 +55,31 @@
             <div class="container">
                 <div class="clinic">
                     <div class="clinic__item">
-                        <img src="./images/akhobekova-clinic.svg" alt="" width="400" height=86>
+                        <img src="./images/akhobekova-clinic.svg" alt="">
                         <p class="section__text">Современная косметологическая<br>клиника в&nbsp;центре Москвы</p>
                         <a href="" class="btn">Записаться</a>
                     </div>
-                    <div>
+                    <picture>
+                        <source srcset="./images/1-mob.jpg" media="(max-width: 375px)">
                         <img src="./images/1.jpg" alt="photo-1" class="section__img item__img">
-                    </div>
+                    </picture>
                 </div>
             </div>
         </section>
         <!-- serviсes -->
         <section class="background">
-            <div class="container ">
+            <div class="container">
                 <div class="serviсes">
-                    <img src="./images/2.jpg" alt="" class="section__img item__img">
+                    <img src="./images/2.jpg" alt="" class="section__img item__img item__img--none">
                     <div class="serviсes__item">
-                        <h2 class="serviсes__title">Идеальная услуга для Вас!</h2>
+                        <h2 class="section__title">Идеальная услуга для Вас!</h2>
                         <p class="section__text">Пройдите короткий тест для выбора процедуры, которая подойдет лично
                             Вам.</p>
-                        <a href="" class="btn btn--black">Пройти тест</a>
+                        <button class="btn btn--black js-popup-btn" data-popup="#test">Пройти тест</button>
                     </div>
                 </div>
                 <div class="padding-left">
-                    <h2 class="serviсes__title ">Готовы принимать поздравления?</h2>
+                    <h2 class="section__title ">Готовы принимать поздравления?</h2>
                     <p class="services__text">Комплекс из 3 процедур перед праздником* со скидкой <span
                             class="color-brand">30%.</span>
                     <p>
@@ -94,7 +96,7 @@
                             <a href="" class="btn">Записаться</a>
                         </div>
                         <div class="services-offer__item swiper-slide">
-                            <h2 class="services-offer__title">Безупречный макияж</h2>
+                            <h2 class="services-offer__title">Безупречный<br>макияж</h2>
                             <div class="services-offer__text">
                                 <p>Массаж лица</p>
                                 <p>Омоложение пептидами</p>
@@ -112,9 +114,9 @@
                             <a href="" class="btn">Записаться</a>
                         </div>
                     </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
                 </div>
+                <div class="swiper-button-prev for-mobile"></div>
+                <div class="swiper-button-next for-mobile"></div>
                 <div class="serviсes__doptext padding-left">*Акция дейтсвует за 2 дня до Дня Рождения</div>
             </div>
         </section>
@@ -127,7 +129,11 @@
                         стажем работы. В&nbsp;2008 окончила высшее учебное образовательное учреждение и&nbsp;продолжает
                         совершенствовать навыки на&nbsp;курсах повышения квалификации.</p>
                 </div>
-                <img src="./images/3.jpg" alt="specialist" class="item__img">
+                <picture>
+                    <source srcset="./images/3-mob.jpg" media="(max-width: 375px)">
+                    <img src="./images/3.jpg" alt="specialist" class="item__img">
+                </picture>
+                
             </div>
         </section>
         <!-- licenses -->
@@ -139,9 +145,10 @@
                         <img src="./images/str-1.svg" alt="" class="accordion__arrow" height="20">
                     </div>
                     <div class="accordion__wrapper">
-                        <div class="accordion__content border-bottom">
+                        <picture class="accordion__content border-bottom">
+                            <source srcset="./images/licenses-mob.jpg" media="(max-width: 375px)">
                             <img src="./images/licenses.jpg" alt="" class="accordion__img">
-                        </div>
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -161,128 +168,124 @@
                 </div>
             </div>
         </footer>
-        <section>
-            <div class="popup container">
-
-                <div class="popup__body">
-                    <div class="popup__title">
-                        <div class="popup__title-text">Найдите идеальную процедуру!</div>
-                        <a href="" class="popup__close"><img src="./images/close.svg" alt="" class="popup__title-img"></a>
-                    </div>
-                    <div class="popup__text">
-                        <label class="test__title">Ваш пол?</label>
+        <div class="popup" id="test">
+            <div class="popup__bg js-popup-bg"></div>
+            <div class="popup__container">
+                <button class="popup__close js-popup-close"><img src="./images/close.svg" alt="закрыть попап"></button>
+                <div class="popup__content">
+                    <div class="test">
+                        <div class="test__head">
+                            <h2 class="test__title js-test-title">Найдите идеальную процедуру!</h2>
+                        </div>
                         <div class="test__body">
-                            <label class="test__input">
-                                <input type="radio" name="group1">
-                                <div class="test__radio"></div><span class="test__text">Женский</span>
-                            </label>
-                            <label class="test__input">
-                                <input type="radio" name="group1">
-                                <div class="test__radio"></div><span class="test__text">Мужской</span>
-                            </label>
+                            <div class="test__step js-test-step">
+                                <div class="test__question">Ваш пол?</div>
+                                <div class="test__answers">
+                                    <label class="test__input">
+                                        <input type="radio" name="group1">
+                                        <div class="test__radio"></div><span class="test__text">Женский</span>
+                                    </label>
+                                    <label class="test__input">
+                                        <input type="radio" name="group1">
+                                        <div class="test__radio"></div><span class="test__text">Мужской</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <!--step-2-->
+                            <div class="test__step js-test-step">
+                                <div class="test__question">Ваш возраст?</div>
+                                <div class="test__answers">
+                                    <label class="test__input">
+                                        <input type="radio" name="group1">
+                                        <div class="test__radio"></div><span class="test__text">18-30</span>
+                                    </label>
+                                    <label class="test__input">
+                                        <input type="radio" name="group1">
+                                        <div class="test__radio"></div><span class="test__text">30-40</span>
+                                    </label>
+                                    <label class="test__input">
+                                        <input type="radio" name="group1">
+                                        <div class="test__radio"></div><span class="test__text">40-50</span>
+                                    </label>
+                                    <label class="test__input">
+                                        <input type="radio" name="group1">
+                                        <div class="test__radio"></div><span class="test__text">50-60</span>
+                                    </label>
+                                    <label class="test__input">
+                                        <input type="radio" name="group1">
+                                        <div class="test__radio"></div><span class="test__text">60+</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <!--step-3-->
+                            <div class="test__step js-test-step">
+                                <div class="test__question">Что Вас беспокоит?</div>
+                                <div class="test__answers">
+                                    <label class="test__input">
+                                        <input type="checkbox" name="group1">
+                                        <div class="test__checkbox"></div><span class="test__text">Возрастные
+                                            изменения</span>
+                                    </label>
+                                    <label class="test__input">
+                                        <input type="checkbox" name="group1">
+                                        <div class="test__checkbox"></div><span class="test__text">Проблемная кожа
+                                            (акне, высыпания)</span>
+                                    </label>
+                                    <label class="test__input">
+                                        <input type="checkbox" name="group1">
+                                        <div class="test__checkbox"></div><span class="test__text">Пигментация</span>
+                                    </label>
+                                    <label class="test__input">
+                                        <input type="checkbox" name="group1">
+                                        <div class="test__checkbox"></div><span class="test__text">Отечность</span>
+                                    </label>
+                                    <label class="test__input">
+                                        <input type="checkbox" name="group1">
+                                        <div class="test__checkbox"></div><span class="test__text">Сухость кожи</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <!--step-result-->
+                            <div class="test__step js-test-step">
+                                <div class="test__answers">
+                                    <div>
+                                        <div class="test__result-title">Манульная косметология</div>
+                                        <div class="test__body-text">Для получения максимального увлажнения, лифтинг
+                                            эффекта и уменьшения отечности рекомендуем - <span
+                                                class="text--brend">Hydromemory Крио-стиками.</span></div>
+                                        <div class="test__result-title">Инъекционная косметология</div>
+                                        <div class="test__body-text">Для разглаживания мелких морщинок и глубокого
+                                            увлажнения лица рекомендуем - <span
+                                                class="text--brend">биоревитализацию.</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--step-result-->
+                            <div class="test__step js-test-step">
+                                <div class="test__answers">
+                                    <div>
+                                        <div class="test__result-title">Манульная косметология</div>
+                                        <div class="test__body-text">Для получения того что бы вернуть утраченные
+                                            контуры
+                                            лица и убрать возрастные изменения рекомендуем - <span
+                                                class="text--brend">пластичский массаж.</span></div>
+                                        <div class="test__result-title">Инъекционная косметология</div>
+                                        <div class="test__body-text">Для снижения отечности и уменьшения количества
+                                            морщин
+                                            рекомендуем - <span class="text--brend">мезотерапию.</span></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <a href="" class="test__img"><img src="./images/next.svg" alt=""></a>
                     </div>
+                    <button class="test__next js-test-next"><img src="./images/next.svg"
+                            alt="следующий вопрос"></button>
+                    <button class="btn btn--input test__btn test__finish">Рекомендации</button>
                 </div>
 
-                <div class="popup__body">
-                    <div class="popup__title">
-                        <div class="popup__title-text">Найдите идеальную процедуру!</div>
-                        <a href="" class="popup__close"><img src="./images/close.svg" alt="" class="popup__title-img"></a>
-                    </div>
-                    <div class="popup__text">
-                        <label class="test__title">Ваш возраст?</label>
-                        <div class="test__body">
-                            <label class="test__input">
-                                <input type="radio" name="group1">
-                                <div class="test__radio"></div><span class="test__text">18-30</span>
-                            </label>
-                            <label class="test__input">
-                                <input type="radio" name="group1">
-                                <div class="test__radio"></div><span class="test__text">30-40</span>
-                            </label>
-                            <label class="test__input">
-                                <input type="radio" name="group1">
-                                <div class="test__radio"></div><span class="test__text">40-50</span>
-                            </label>
-                            <label class="test__input">
-                                <input type="radio" name="group1">
-                                <div class="test__radio"></div><span class="test__text">50-60</span>
-                            </label>
-                            <label class="test__input">
-                                <input type="radio" name="group1">
-                                <div class="test__radio"></div><span class="test__text">60+</span>
-                            </label>
-                        </div>
-                        <a href="" class="test__img"><img src="./images/next.svg" alt=""></a>
-                    </div>
-                </div>
-
-                <div class="popup__body">
-                    <div class="popup__title">
-                        <div class="popup__title-text">Найдите идеальную процедуру!</div>
-                        <a href="" class="popup__close"><img src="./images/close.svg" alt="" class="popup__title-img"></a>
-                    </div>
-                    <div class="popup__text">
-                        <label class="test__title">Что Вас беспокоит?</label>
-                        <div class="test__body">
-                            <label class="test__input">
-                                <input type="checkbox" name="group1">
-                                <div class="test__checkbox"></div><span class="test__text">Возрастные
-                                    изменения</span>
-                            </label>
-                            <label class="test__input">
-                                <input type="checkbox" name="group1">
-                                <div class="test__checkbox"></div><span class="test__text">Проблемная кожа
-                                    (акне, высыпания)</span>
-                            </label>
-                            <label class="test__input">
-                                <input type="checkbox" name="group1">
-                                <div class="test__checkbox"></div><span class="test__text">Пигментация</span>
-                            </label>
-                            <label class="test__input">
-                                <input type="checkbox" name="group1">
-                                <div class="test__checkbox"></div><span class="test__text">Отечность</span>
-                            </label>
-                            <label class="test__input">
-                                <input type="checkbox" name="group1">
-                                <div class="test__checkbox"></div><span class="test__text">Сухость кожи</span>
-                            </label>
-                        </div>
-                        <a href="" class="btn btn--input test__btn test__img">Пройти тест</a></a>
-                    </div>
-                </div>
-
-                <div class="popup__body">
-                    <div class="popup__title">
-                        <div class="popup__title-text">Рекомендуем</div>
-                        <a href="" class="popup__close"><img src="./images/close.svg" alt="" class="popup__title-img"></a>
-                    </div>
-                    <div class="popup__text">
-                        <div>
-                            <div class="test__title">Манульная косметология</div>
-                            <div class="test__body-text">Для получения максимального увлажнения, лифтинг эффекта и уменьшения отечности рекомендуем - <span class="text--brend">Hydromemory Крио-стиками.</span></div>
-                            <div class="test__title">Инъекционная косметология</div>
-                            <div class="test__body-text">Для разглаживания мелких морщинок и глубокого увлажнения лица рекомендуем - <span class="text--brend">биоревитализацию.</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="popup__body">
-                    <div class="popup__title">
-                        <div class="popup__title-text">Рекомендуем</div>
-                        <a href="" class="popup__close"><img src="./images/close.svg" alt="" class="popup__title-img"></a>
-                    </div>
-                    <div class="popup__text">
-                        <div>
-                            <div class="test__title">Манульная косметология</div>
-                            <div class="test__body-text">Для получения того что бы вернуть утраченные контуры лица и убрать возрастные изменения рекомендуем - <span class="text--brend">пластичский массаж.</span></div>
-                            <div class="test__title">Инъекционная косметология</div>
-                            <div class="test__body-text">Для снижения отечности и уменьшения количества морщин рекомендуем - <span class="text--brend">мезотерапию.</span></div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </section>
+        </div>
+        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
