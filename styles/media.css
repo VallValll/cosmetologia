@@ -90,6 +90,24 @@
         top: auto;
         bottom: -60px;
     }
+
+    .contacts {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin: 48px 0;
+    }
+
+    .contact__item {
+        padding-bottom: 36px;
+    }
+
+    .contact__item .section__title{
+        padding: 0;
+    }
+
+    .contact__map {
+        justify-content: center;
+    }
 }
 
 @media screen and (width < 768px) {
