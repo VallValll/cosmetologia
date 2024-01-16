@@ -66,9 +66,7 @@ img {
 /* layout */
 
 .container {
-    max-width: 1176px;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 1136px;
     margin: 0 auto;
 }
 
@@ -98,8 +96,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 90px;
-    margin: 28px 0 16px;
+    padding: 0 96px 0 121px;
+    margin: 37px 0 16px;
 
     font-size: var(--font-size-nav);
 }
@@ -162,12 +160,21 @@ img {
     color: var(--color-brand);
 }
 
+.section__subtitle {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--color-brand);
+    padding-top: 49px;
+    padding-left: 8px;
+}
+
 .section__text {
-    padding: 56px 0;
+    padding: 60px 0;
 }
 
 .section__img {
     border-radius: 50px;
+    padding-left: 10px;
 }
 
 .item__img {
@@ -215,8 +222,17 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    margin: 96px 0 48px;
+    margin: 90px 0 44px;
 }
+
+.clinic__item {
+    padding-left: 10px;
+}
+
+.clinic__item-img {
+    padding-top: 12px;
+}
+
 
 /* btn */
 
@@ -228,7 +244,7 @@ img {
     max-width: 254px;
     border: 1px solid var(--color-brand);
     border-radius: 50px;
-    padding: 12px 60px;
+    padding: 12px 64px;
 
     font-size: 20px;
 }
@@ -241,6 +257,7 @@ img {
 .btn--black {
     background-color: var(--color-brand-btn);
     color: #FFF;
+    padding: 12px 62px;
 }
 
 .btn--input {
@@ -261,17 +278,15 @@ img {
 .serviсes__body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    padding: 48px 0;
 }
 
 .serviсes__item {
-    padding: 100px 0;
+    padding: 100px 0 100px 40px ;
 }
 
 .services__text {
     font-size: 24px;
-    padding: 20px 0 48px;
+    padding: 22px 0 48px 8px;
 }
 
 .padding-left {
@@ -304,7 +319,7 @@ img {
 .services__offer-text {
     font-size: 20px;
     color: var(--color-black);
-    margin: 38px 0;
+    padding: 42px 0;
 
     display: grid;
     gap: 16px;
@@ -313,6 +328,8 @@ img {
 .serviсes__doptext {
     font-size: 20px;
     color: var(--color-black);
+    margin-top: 47px;
+    padding-left: 16px;
 }
 
 /* specialist */
@@ -320,15 +337,19 @@ img {
 .specialist {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 82px;
+    gap: 46px;
     padding: 48px 0;
+}
+
+.specialist__item {
+    padding-left: 4px;
 }
 
 .specialist__title {
     color: var(--color-brand);
     font-size: 64px;
     font-weight: 500;
-    padding: 84px 0 56px;
+    padding: 84px 0 60px;
 }
 
 /* accordion */
@@ -339,19 +360,28 @@ img {
 }
 
 .accordion__header {
-    color: var(--color-brand);
-    font-weight: 500;
-    font-size: 36px;
-    padding-bottom: 11px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-top: -4px;
     cursor: pointer;
 
     display: flex;
     align-items: center;
 }
 
+.accordion__header--text {
+    color: var(--color-brand);
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.accordion__header--loyout {
+    margin-bottom: 40px;
+}
+
 .accordion__content {
     display: none;
-    padding: 48px 0 98px;
+    padding-top: 48px;
 }
 
 .accordion.show .accordion__content {
@@ -364,6 +394,7 @@ img {
 
 .accordion__arrow {
     transition: 0.3s;
+    padding-left: 17px;
 }
 
 .accordion__img {
@@ -371,6 +402,10 @@ img {
     height: 583px;
     max-width: 100%;
     object-fit: contain;
+}
+
+.accordion__slider {
+    margin: 0 auto;
 }
 
 .accordion__slider .slider__controls {
@@ -386,15 +421,27 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    padding: 20px 0;
+    padding: 24px 0;
 }
 
 .footer__item {
     font-size: 16px;
 }
 
-.footer__item-1 {
-    padding-bottom: 20px;
+.footer__item--1 {
+    padding: 0 0 24px 14px;
+}
+
+.footer__item--2 {
+    padding-left: 14px;
+}
+
+.footer__item--3 {
+    padding-left: 66px;
+}
+
+.footer__item--4 {
+    padding-left: 109px;
 }
 
 /* popup */
@@ -608,6 +655,7 @@ img {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 24px;
+    align-items: center;
 }
 
 .section__grid-1 {
@@ -645,6 +693,7 @@ img {
 
 .contacts__text {
     padding-top: 20px;
+    display: block;
 }
 
 .contact__map {
@@ -671,7 +720,19 @@ img {
     text-align: center;
 
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.services-card__arrow {
+    margin-top: 20px;
+    width: 70px;
+    height: 32px;
+}
+
+.services-card__arrow--mob {
+    display: none;
 }
 
 .services-card__text {
