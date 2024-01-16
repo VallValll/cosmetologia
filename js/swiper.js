@@ -2,29 +2,37 @@ function isMobile() {
   return window.innerWidth <= 1024;
 }
 
-function swiperInit() {
-  return new Swiper('.swiper', {
+function swiperInit(el) {
+  const pagination = {
+    pagination: {
+      el: el.querySelector('.slider__pagination'),
+      clickable: true,
+    },
+  };
+
+  return new Swiper(el.querySelector('.swiper'), {
     loop: true,
     spaceBetween: 20,
+    ...(el.dataset.pagination ? pagination : {}),
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: el.querySelector('.slider__button--next'),
+      prevEl: el.querySelector('.slider__button--prev'),
     },
   });
 }
 
 // 1. написать вводную ф-ю для свайпера с его конфигурацией и проверкой на наличие
 
-function sliderInit() {
-  const sliderContainer = document.querySelector('.swiper');
-
-  if (!sliderContainer) return;
-
+function sliderInit(el) {
   let flagInit = false;
   let swiper = null;
 
+  const isDevice = () => {
+    return el.dataset.device === 'mobile' ? isMobile() : !isMobile();
+  };
+
   const enabledSwiper = () => {
-    swiper = swiperInit();
+    swiper = swiperInit(el);
     flagInit = true;
   };
 
@@ -35,22 +43,28 @@ function sliderInit() {
 
   //   2. сделать проверку на десктоп или моб
 
-  if (isMobile()) {
+  if (el.dataset.device) {
+    if (isDevice()) {
+      enabledSwiper();
+    }
+  } else {
     enabledSwiper();
   }
 
-  //   3. добавить событие на изменение ширины экрана
-
-  window.addEventListener('resize', (e) => {
-    // 4. на том или ином экране включать или отключать слайдер
-    if (isMobile() && !flagInit) {
-      console.log('mob');
-      enabledSwiper();
-    } else if (!isMobile() && flagInit) {
-      console.log('desk');
-      disableSwiper();
-    }
-  });
+  // 4. на том или ином экране включать или отключать слайдер
+  if (el.dataset.device) {
+    window.addEventListener('resize', (e) => {
+      if (isDevice() && !flagInit) {
+        console.log('mob');
+        enabledSwiper();
+      } else if (!isDevice() && flagInit) {
+        console.log('desk');
+        disableSwiper();
+      }
+    });
+  }
 }
 
-sliderInit();
+const sliders = document.querySelectorAll('.slider');
+
+sliders.forEach((el) => sliderInit(el));

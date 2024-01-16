@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,7 +57,7 @@
                     <li><a href="./services.html">Услуги</a></li>
                     <li>/</li>
                     <li class="active">Биоревитализация</li>
-                  </ul>
+                </ul>
             </div>
         </section>
         <section class="container">
@@ -66,19 +67,36 @@
                         <h1 class="bio__title">Биоревитализация</h1>
                         <img src="./images/next-2.svg" alt="next" class="bio__img">
                     </div>
-                    <div class="bio__text">Это процедура подкожного введения гиалуроновой кислоты высокой концентрации в форме инъекций. Позволяет достичь эффекта разглаживания мелких морщинок, восстановления и длительного увлажнения кожи, улучшения цвета и овала лица.<br>Процедура имеет длительный эффект — от 3 до 6 месяцев. Во время процедуры доктор вводит вам небольшое количество препарата, чтобы запустить естественные процессы синтеза гиалуроновой кислоты и продлить эффект омоложения.</div>
+                    <div class="bio__text">Это процедура подкожного введения гиалуроновой кислоты высокой концентрации в
+                        форме инъекций. Позволяет достичь эффекта разглаживания мелких морщинок, восстановления и
+                        длительного увлажнения кожи, улучшения цвета и овала лица.<br>Процедура имеет длительный эффект
+                        — от 3 до 6 месяцев. Во время процедуры доктор вводит вам небольшое количество препарата, чтобы
+                        запустить естественные процессы синтеза гиалуроновой кислоты и продлить эффект омоложения.</div>
                     <a href="" class="btn">Записаться</a>
                 </div>
                 <div class="bio__slider">
-                    <picture>
-                        <img src="./images/11.jpg" alt="photo-11" class="bio__slider-img">
-                    </picture>
-                    <!-- <picture>
-                        <img src="./images/12.jpg" alt="photo-12" class="bio__slider-img">
-                    </picture>
-                    <picture>
-                        <img src="./images/13.jpg" alt="photo-13" class="bio__slider-img">
-                    </picture> -->
+                    <div class="slider bio__slider-slider" data-pagination="true">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <img src="./images/11.jpg" alt="photo-11" class="bio__slider-img">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <img src="./images/12.jpg" alt="photo-12" class="bio__slider-img">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <img src="./images/13.jpg" alt="photo-13" class="bio__slider-img">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__pagination"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -88,15 +106,19 @@
                 <div class="recom">
                     <div class="recom__item-1">
                         <h2 class="recom__title">Рекомендации</h2>
-                        <div class="recom__text">Использовать только средства ухода, рекомендованные врачом. Не&nbsp;посещать несколько дней сауну, солярий, тренажерный зал. В&nbsp;течение двух недель не&nbsp;загорать и&nbsp;не&nbsp;посещать солярий.</div>
+                        <div class="recom__text">Использовать только средства ухода, рекомендованные врачом.
+                            Не&nbsp;посещать несколько дней сауну, солярий, тренажерный зал. В&nbsp;течение двух недель
+                            не&nbsp;загорать и&nbsp;не&nbsp;посещать солярий.</div>
                     </div>
                     <div class="recom__item-2">
                         <h2 class="recom__title">Показания</h2>
-                        <div class="recom__text">Потеря упругости.<br>Cухость кожи.<br>Морщинки.<br>Тусклый цвет лица.<br>Жирная кожа и&nbsp;расширенные поры.</div>
+                        <div class="recom__text">Потеря упругости.<br>Cухость кожи.<br>Морщинки.<br>Тусклый цвет
+                            лица.<br>Жирная кожа и&nbsp;расширенные поры.</div>
                     </div>
                     <div class="recom__item-3">
                         <h2 class="recom__title">Противопоказания</h2>
-                        <div class="recom__text">Индивидуальная непереносимость.<br>Беременность и&nbsp;период лактации. Онкология.<br>Герпес.<br>Острая стадия инфекционных заболеваний.</div>
+                        <div class="recom__text">Индивидуальная непереносимость.<br>Беременность и&nbsp;период лактации.
+                            Онкология.<br>Герпес.<br>Острая стадия инфекционных заболеваний.</div>
                     </div>
                 </div>
             </div>
@@ -104,32 +126,44 @@
         <!-- price -->
         <section class="container">
             <div class="prices">
-                <h2 class="prices__title">Стоимость</h2>
-                <div class="price">
-                    <div class="price__item">
-                        <div class="text--brend-noneunnderline fw-500">IAL-system</div>
-                        <div>1,1 мл</div>
-                        <div class="text--brend-noneunnderline">12000 руб.</div>
+                <div class="slider prices__slider" data-device="mobile">
+                    <h2 class="prices__title">Стоимость</h2>
+                    <div class="swiper">
+                        <div class="price swiper-wrapper">
+                            <div class="price__item swiper-slide">
+                                <div class="text--brend-noneunnderline fw-500">IAL-system</div>
+                                <div>1,1 мл</div>
+                                <div class="text--brend-noneunnderline">12000 руб.</div>
+                            </div>
+                            <div class="price__item swiper-slide">
+                                <div class="text--brend-noneunnderline fw-500">IAL-system ACP</div>
+                                <div>1,1 мл</div>
+                                <div class="text--brend-noneunnderline">13500 руб.</div>
+                            </div>
+                            <div class="price__item swiper-slide">
+                                <div class="text--brend-noneunnderline fw-500">JaluPro</div>
+                                <div>3 мл</div>
+                                <div class="text--brend-noneunnderline">11500 руб. </div>
+                            </div>
+                            <div class="price__item swiper-slide">
+                                <div class="text--brend-noneunnderline fw-500">JaluPro HWM</div>
+                                <div>1,5 мл</div>
+                                <div class="text--brend-noneunnderline">15500 руб.</div>
+                            </div>
+                            <div class="price__item swiper-slide">
+                                <div class="text--brend-noneunnderline fw-500">Juvederm Volite</div>
+                                <div>1 мл</div>
+                                <div class="text--brend-noneunnderline">24000 руб.</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="price__item">
-                        <div class="text--brend-noneunnderline fw-500">IAL-system ACP</div>
-                        <div>1,1 мл</div>
-                        <div class="text--brend-noneunnderline">13500 руб.</div>
-                    </div>
-                    <div class="price__item">
-                        <div class="text--brend-noneunnderline fw-500">JaluPro</div>
-                        <div>3 мл</div>
-                        <div class="text--brend-noneunnderline">11500 руб. </div>
-                    </div>
-                    <div class="price__item">
-                        <div class="text--brend-noneunnderline fw-500">JaluPro HWM</div>
-                        <div>1,5 мл</div>
-                        <div class="text--brend-noneunnderline">15500 руб.</div>
-                    </div>
-                    <div class="price__item">
-                        <div class="text--brend-noneunnderline fw-500">Juvederm Volite</div>
-                        <div>1 мл</div>
-                        <div class="text--brend-noneunnderline">24000 руб.</div>
+                    <div class="slider__controls for-mobile">
+                        <button class="slider__button slider__button--prev">
+                            <img src="/images/arrow-left.svg" alt="сладер в лево">
+                        </button>
+                        <button class="slider__button slider__button--next">
+                            <img src="/images/arrow-right.svg" alt="сладер в право">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -155,6 +189,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/main.js"></script>
-    
+
 </body>
+
 </html>
