@@ -55,14 +55,17 @@
             <div class="container">
                 <div class="clinic">
                     <div class="clinic__item">
-                        <img src="./images/akhobekova-clinic.svg" alt="">
+                        <img src="./images/akhobekova-clinic.svg" alt="" class="clinic__item-img">
                         <p class="section__text">Современная косметологическая<br>клиника в&nbsp;центре Москвы</p>
                         <a href="" class="btn">Записаться</a>
                     </div>
-                    <picture>
-                        <source srcset="./images/1-mob.jpg" media="(max-width: 768px)">
-                        <img src="./images/1.jpg" alt="photo-1" class="section__img item__img">
-                    </picture>
+                    <div class="section__img">
+                        <picture>
+                            <source srcset="./images/1-mob.jpg" media="(max-width: 768px)">
+                            <img src="./images/1.jpg" alt="photo-1" class="section__img item__img">
+                        </picture>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -79,7 +82,7 @@
                     </div>
                 </div>
                 <div class="padding-left">
-                    <h2 class="section__title ">Готовы принимать поздравления?</h2>
+                    <h2 class="section__subtitle ">Готовы принимать поздравления?</h2>
                     <p class="services__text">Комплекс из 3 процедур перед праздником* со скидкой <span
                             class="color-brand">30%.</span>
                     <p>
@@ -113,7 +116,7 @@
                     <div class="swiper">
                         <div class="services__offer swiper-wrapper">
                             <div class="services__offer-item swiper-slide">
-                                <h2 class="services__offer-title">Выход<br>в свет</h2>
+                                <h2 class="services__offer-title">Выход<br> в свет</h2>
                                 <div class="services__offer-text">
                                     <p>Разглаживание морщин</p>
                                     <p>Глубокое очищение кожи</p>
@@ -122,7 +125,7 @@
                                 <a href="" class="btn">Записаться</a>
                             </div>
                             <div class="services__offer-item swiper-slide">
-                                <h2 class="services__offer-title">Безупречный<br>макияж</h2>
+                                <h2 class="services__offer-title">Безупречный<br> макияж</h2>
                                 <div class="services__offer-text">
                                     <p>Массаж лица</p>
                                     <p>Омоложение пептидами</p>
@@ -131,7 +134,7 @@
                                 <a href="" class="btn">Записаться</a>
                             </div>
                             <div class="services__offer-item swiper-slide">
-                                <h2 class="services__offer-title">Золотое<br>сияние</h2>
+                                <h2 class="services__offer-title">Золотое<br> сияние</h2>
                                 <div class="services__offer-text">
                                     <p>Тонизация кожи</p>
                                     <p>“Золотая церемония”</p>
@@ -175,7 +178,7 @@
             <div class="container">
                 <div class="accordion js-accordion">
                     <div class="accordion__header border-bottom">
-                        <span>Лицензии</span>
+                        <span class="accordion__header--text">Лицензии</span>
                         <img src="./images/str-1.svg" alt="" class="accordion__arrow" height="20">
                     </div>
                     <div class="accordion__wrapper">
@@ -189,15 +192,15 @@
         </section>
         <footer class="border-top">
             <div class="container">
-                <div class="footer ">
+                <div class="footer">
                     <div class="footer__item">
-                        <p class="footer__item-1">Имеются противопоказания. Проконсультируйтесь с&nbsp;врачом.18+</p>
-                        <p>Пн - Вс, с 11:00 до 22:00</p>
+                        <p class="footer__item--1">Имеются противопоказания. Проконсультируйтесь с&nbsp;врачом.<br> 18+</p>
+                        <p class="footer__item--2">Пн - Вс, с 11:00 до 22:00</p>
                     </div>
-                    <div class="footer__item">
+                    <div class="footer__item footer__item--3">
                         г. Москва, Большая Филевская, д.21 к.2
                     </div>
-                    <div class="footer__item">
+                    <div class="footer__item footer__item--4">
                         Информация, представленная на&nbsp;сайте, не&nbsp;является публичной офертой, определяемой
                         по&nbsp;ст.&nbsp;437&nbsp;ГК РФ
                     </div>
