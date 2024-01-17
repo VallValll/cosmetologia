@@ -14,6 +14,10 @@
 }
 
 @media screen and (width < 1024px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
     .for-desktop {
         display: none !important;
@@ -28,6 +32,7 @@
         grid-template-columns: 1fr;
         justify-items: center;
         text-align: center;
+        margin: 50px 0;
     }
 
     .section__text {
@@ -37,6 +42,10 @@
     .section__subtitle {
         padding: 0;
         text-align: center;
+    }
+
+    .section__img {
+        padding-left: 0;
     }
 
     .section__grid {
@@ -250,6 +259,10 @@
         height: 110px;
     }
 
+    .accordion__arrow {
+        padding-left: 0;
+    }
+
 }
 
 @media screen and (width < 768px) {
@@ -305,12 +318,28 @@
 
     .section__title {
         font-size: 32px;
-        padding-top: 20px;
+        padding-top: 0;
+    }
+
+    .section__subtitle {
+        font-size: 32px;
     }
 
     .section__text {
         font-size: 20px;
-        padding: 40px;
+        padding: 40px 0;
+    }
+
+    .section__grid-2 {
+        grid-row: none;
+    }
+
+    .section__grid-2 .item__img{
+        height: 400px;
+    }
+
+    .section__grid-3 .item__img-1{
+        height: 400px;
     }
 
     .specialist__title {
@@ -325,6 +354,18 @@
     .accordion__header {
         font-size: 32px;
         justify-content: center;
+    }
+
+    .accordion__header--loyout {
+        margin-bottom: 0;
+    }
+
+    .accordion__content {
+        padding-top: 20px;
+    }
+
+    .accordion__slider {
+        padding-bottom: 40px;
     }
 
     .item__img--none {
@@ -354,10 +395,6 @@
         font-size: 20px;
     }
 
-    .section__subtitle {
-        font-size: 32px;
-    }
-
     .services-card__title {
         font-size: 32px;
     }
@@ -366,7 +403,33 @@
         font-size: 20px;
     }
 
-    
+    .services-card__body-item {
+        width: 252px;
+        height: 68px;
+    }
+
+    .bio__title, .recom__title, .prices__title{
+        font-size: 24px;
+    }
+
+    .bio__text, .recom__text {
+        font-size: 16px;
+    }
 }
 
+@media screen and (width < 376px){
+    .section__grid-2 .item__img{
+        height: 194px;
+        width: 190px;
+    }
+
+    .section__grid-3 .item__img-1{
+        height: 194px;
+        width: 112px;
+    }
+
+    .section__text br {
+        display: none;
+    }
+}
 
