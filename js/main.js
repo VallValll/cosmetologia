@@ -54,4 +54,43 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log(el);
     initPopup(el);
   });
-});
+
+ function testInit() {
+    const testContainer = document.querySelector('.test')
+
+    console.log(testContainer);
+
+
+    if (!testContainer) return;
+    
+    const testStep = testContainer.querySelectorAll('.js-test-step')
+    const inputTest = testContainer.querySelectorAll('input')
+    const nextButton = testContainer.querySelector('.js-test-next')
+    let currentStep = 0
+
+    console.log(testStep)
+    console.log(inputTest)
+    console.log(nextButton)
+
+    function showResult() {
+      console.log('result')
+    }
+  
+
+    function nextStep () {
+      if (currentStep + 1 > testStep.length - 1) {
+        showResult()
+        return
+      }
+      testStep[currentStep].classList.remove('is-active')
+      testStep[++currentStep].classList.add('is-active')
+      console.log(testStep[currentStep])
+    }
+
+    nextButton.addEventListener('click', nextStep) 
+ }
+
+ testInit()
+
+
+})

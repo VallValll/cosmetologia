@@ -649,6 +649,16 @@ img {
     margin-bottom: 0 !important;
 }
 
+.test__step {
+    display: none;
+    
+}
+
+.test__step.is-active {
+    display: block;
+
+}
+
 /* section__gr1d */
 
 .section__grid {
@@ -796,7 +806,7 @@ img {
 
 .bio__text {
     line-height: 127%;
-    max-width: 664px;
+    /* max-width: 664px; */
     padding: 56px 0 48px;
 }
 
@@ -903,3 +913,4 @@ img {
     justify-content: center;
     padding: 20px;
 }
+
