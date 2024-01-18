@@ -236,23 +236,23 @@
                                 <div class="test__question">Ваш возраст?</div>
                                 <div class="test__answers">
                                     <label class="test__input">
-                                        <input type="radio" name="group1">
+                                        <input type="radio" name="group1" value="value1">
                                         <div class="test__radio"></div><span class="test__text">18-30</span>
                                     </label>
                                     <label class="test__input">
-                                        <input type="radio" name="group1">
+                                        <input type="radio" name="group1" value="value1">
                                         <div class="test__radio"></div><span class="test__text">30-40</span>
                                     </label>
                                     <label class="test__input">
-                                        <input type="radio" name="group1">
+                                        <input type="radio" name="group1" value="value2">
                                         <div class="test__radio"></div><span class="test__text">40-50</span>
                                     </label>
                                     <label class="test__input">
-                                        <input type="radio" name="group1">
+                                        <input type="radio" name="group1" value="value2">
                                         <div class="test__radio"></div><span class="test__text">50-60</span>
                                     </label>
                                     <label class="test__input">
-                                        <input type="radio" name="group1">
+                                        <input type="radio" name="group1" value="value2">
                                         <div class="test__radio"></div><span class="test__text">60+</span>
                                     </label>
                                 </div>
@@ -286,33 +286,24 @@
                                 </div>
                             </div>
                             <!--step-result-->
-                            <div class="test__step">
+                            <div class="test__step js-test-result" id="value1">
                                 <div class="test__answers">
                                     <div>
                                         <div class="test__result-title">Манульная косметология</div>
-                                        <div class="test__body-text">Для получения максимального увлажнения, лифтинг
-                                            эффекта и уменьшения отечности рекомендуем - <span
-                                                class="text--brend">Hydromemory Крио-стиками.</span></div>
+                                        <div class="test__body-text">Для получения максимального увлажнения, лифтинг эффекта и уменьшения отечности рекомендуем - <span class="text--brend">Hydromemory Крио-стиками.</span></div>
                                         <div class="test__result-title">Инъекционная косметология</div>
-                                        <div class="test__body-text">Для разглаживания мелких морщинок и глубокого
-                                            увлажнения лица рекомендуем - <span
-                                                class="text--brend">биоревитализацию.</span></div>
+                                        <div class="test__body-text">Для разглаживания мелких морщинок и глубокого увлажнения лица рекомендуем - <a href="./biorevitalization.html" class="text--brend">биоревитализацию.</a></div>
                                     </div>
                                 </div>
                             </div>
                             <!--step-result-->
-                            <div class="test__step">
+                            <div class="test__step js-test-result" id="value2">
                                 <div class="test__answers">
                                     <div>
                                         <div class="test__result-title">Манульная косметология</div>
-                                        <div class="test__body-text">Для получения того что бы вернуть утраченные
-                                            контуры
-                                            лица и убрать возрастные изменения рекомендуем - <span
-                                                class="text--brend">пластичский массаж.</span></div>
+                                        <div class="test__body-text">Для получения того что бы вернуть утраченные контуры лица и убрать возрастные изменения рекомендуем - <span class="text--brend">пластичский массаж.</span></div>
                                         <div class="test__result-title">Инъекционная косметология</div>
-                                        <div class="test__body-text">Для снижения отечности и уменьшения количества
-                                            морщин
-                                            рекомендуем - <span class="text--brend">мезотерапию.</span></div>
+                                        <div class="test__body-text">Для снижения отечности и уменьшения количества морщин рекомендуем - <span class="text--brend">мезотерапию.</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -320,7 +311,7 @@
 
                         <button class="test__next js-test-next"><img src="./images/next.svg"
                             alt="следующий вопрос"></button>
-                        <!-- <button class="btn btn--input test__btn test__finish">Рекомендации</button> -->
+                        <button class="btn btn--input test__btn test__finish js-test-finish">Рекомендации</button>
                     </div>
 
                 </div>
