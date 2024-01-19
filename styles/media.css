@@ -183,8 +183,8 @@
         gap: 40px;
     }
 
-    .recom__text {
-        padding-top: 20px;
+    .recom__item-2 {
+        grid-column: span 3;
     }
 
     .price {
@@ -268,9 +268,17 @@
         padding-left: 0;
     }
 
+    .section__services .border-radius {
+        border-radius: 0;
+    }
+
 }
 
 @media screen and (width < 768px) {
+    .border-radius {
+        border-radius: 30px;
+    }
+
     .header__menu {
         display: none;
         flex-direction: column;
@@ -434,9 +442,26 @@
     .prices {
         margin: 48px 0 ;
     }
+
+    .certificate .container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .certificate__slider--controls .slider__button--prev {
+        margin: 0 -46px;
+    }
+
+    .certificate__slider--controls .slider__button--next {
+        margin: 0 -46px;
+    }
+
+    .test__body {
+        padding: 40px 57px 110px 57px;
+    }
 }
 
-@media screen and (width < 376px){
+@media screen and (width < 500px) {
     .section__grid-2 .item__img{
         height: 194px;
         width: 190px;
@@ -446,6 +471,10 @@
         height: 194px;
         width: 112px;
     }
+}
+
+@media screen and (width < 376px){
+    
 
     .section__text br {
         display: none;
