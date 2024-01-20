@@ -120,6 +120,16 @@ function testInit() {
             return;
         }
 
+        const inputs = testStep[currentStep].querySelectorAll('input')
+        let checked = false
+        inputs.forEach(el => {
+          if (el.checked) {
+            checked = true
+          }
+        })
+
+        if (!checked) return
+
         testStep[currentStep].classList.remove('is-active');
         testStep[++currentStep].classList.add('is-active');
 
